@@ -1,0 +1,8 @@
+A    B        typ A     typ B |     ext A     ext B
+R1   R6   3.04x2.30 2.60x2.44 | 3.33x2.82 2.58x2.85
+R2   R3   2.92x2.32 2.94x3.12 | 3.58x2.75 3.51x3.41
+R5   R2   3.82x2.92 3.04x2.78 | 3.81x2.91 3.92x2.76
+R6   R1   1.96x1.72 2.46x2.26 | 1.94x1.68 2.45x2.24
+R7   R5   2.22x1.44 2.18x1.72 | 2.46x2.52 2.16x1.70
+typical: median 36.0 cm  max 80.0  pass 0/10
+extent (current polygons, bbox): median 40.0 cm max 81.9

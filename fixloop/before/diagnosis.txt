@@ -1,0 +1,2 @@
+measured faces in A: 48, found again in B: 28
+face position difference: median 4.1 cm, p75 6.7 cm, within 1 cm: 7%, within 2 cm: 14%

@@ -1,0 +1,1 @@
+faces matched 29 | median 3.3 cm | within 1cm 14% | within gate(1cm or 0.5%) 14% | within 2cm 31% | within 5cm 69%
