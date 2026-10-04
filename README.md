@@ -3,6 +3,11 @@
 Applied AI Engineer case study, Round 2. **Status: LiDAR tier only.** Photo and video tiers are
 not implemented (see `COMPLIANCE_MATRIX.md` for exactly what is and is not done).
 
+**Raw data:** the three Stray Scanner capture zips (`single_room`, `single_scan_floor_only`,
+`single_scan_with_ceiling`) are attached to the [v1 release](https://github.com/chinmayy13/roomscan/releases/tag/v1).
+Download them into one folder, then run `bash reproduce.sh <that folder>` to regenerate every
+number in this repo.
+
 ## Run it
 
 ```bash
