@@ -1,0 +1,17 @@
+alignment: 72% of B's wall points within 5 cm of A's
+
+A room B room dim          A (m)   B (m)  |diff| cm  gate  IoU
+R1     R5     x-extent     2.946   2.920        2.6  FAIL  0.64
+R1     R5     y-extent     2.428   2.902       47.4  FAIL  0.64
+R2     R3     x-extent     3.617   3.572        4.5  FAIL  0.74
+R2     R3     y-extent     2.954   3.416       46.2  FAIL  0.74
+R3     R4     x-extent     4.887   4.279       60.8  FAIL  0.77
+R3     R4     y-extent     4.739   3.489      125.0  FAIL  0.77
+R4     R6     x-extent     3.789   6.343      255.4  FAIL  0.57
+R4     R6     y-extent     3.912   3.770       14.2  FAIL  0.57
+R5     R2     x-extent     4.367   3.885       48.2  FAIL  0.84
+R5     R2     y-extent     3.024   2.802       22.2  FAIL  0.84
+R6     R1     x-extent     1.962   2.445       48.3  FAIL  0.63
+R6     R1     y-extent     1.796   2.151       35.5  FAIL  0.63
+
+matched dims: 12, pass 0/12, median |diff| 46.8 cm, max 255.4 cm

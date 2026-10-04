@@ -1,0 +1,1798 @@
+{
+  "schema_version": "0.1",
+  "capture": "single_scan_with_ceiling.zip",
+  "tier": "lidar",
+  "room_dims_method": "extent",
+  "units": "metres",
+  "frame": "floor plane, Manhattan-aligned; height measured up from the floor",
+  "drift_correction": {
+    "enabled": true,
+    "wall_gap_before": {
+      "median_cm": 1.28,
+      "p90_cm": 5.91
+    },
+    "wall_gap_after": {
+      "median_cm": 1.29,
+      "p90_cm": 5.01
+    },
+    "chunks": [
+      {
+        "chunk": 0,
+        "dy": -0.0001,
+        "yaw_deg": 0.0,
+        "shift_m": 0.0,
+        "overlap": null,
+        "accepted": false
+      },
+      {
+        "chunk": 1,
+        "dy": -0.0024,
+        "yaw_deg": -5.354,
+        "shift_m": 0.1544,
+        "overlap": 0.279,
+        "accepted": false
+      },
+      {
+        "chunk": 2,
+        "dy": 0.0007,
+        "yaw_deg": -5.454,
+        "shift_m": 0.4131,
+        "overlap": 0.089,
+        "accepted": false
+      },
+      {
+        "chunk": 3,
+        "dy": -0.0064,
+        "yaw_deg": -0.001,
+        "shift_m": 0.0018,
+        "overlap": 0.611,
+        "accepted": true
+      },
+      {
+        "chunk": 4,
+        "dy": -0.0006,
+        "yaw_deg": -0.127,
+        "shift_m": 0.0733,
+        "overlap": 0.594,
+        "accepted": true
+      },
+      {
+        "chunk": 5,
+        "dy": 0.0002,
+        "yaw_deg": -1.38,
+        "shift_m": 0.0472,
+        "overlap": 0.294,
+        "accepted": false
+      },
+      {
+        "chunk": 6,
+        "dy": -0.0023,
+        "yaw_deg": -1.442,
+        "shift_m": 0.089,
+        "overlap": 0.402,
+        "accepted": true
+      },
+      {
+        "chunk": 7,
+        "dy": -0.0043,
+        "yaw_deg": -0.235,
+        "shift_m": 0.0357,
+        "overlap": 0.678,
+        "accepted": true
+      },
+      {
+        "chunk": 8,
+        "dy": 0.0089,
+        "yaw_deg": -0.086,
+        "shift_m": 0.0016,
+        "overlap": 0.97,
+        "accepted": true
+      },
+      {
+        "chunk": 9,
+        "dy": -0.0007,
+        "yaw_deg": 0.012,
+        "shift_m": 0.0034,
+        "overlap": 0.965,
+        "accepted": true
+      },
+      {
+        "chunk": 10,
+        "dy": 0.0,
+        "yaw_deg": 0.021,
+        "shift_m": 0.1226,
+        "overlap": 0.955,
+        "accepted": true
+      },
+      {
+        "chunk": 11,
+        "dy": 0.0,
+        "yaw_deg": 0.184,
+        "shift_m": 0.1663,
+        "overlap": 0.859,
+        "accepted": true
+      },
+      {
+        "chunk": 12,
+        "dy": 0.0,
+        "yaw_deg": 0.098,
+        "shift_m": 0.2103,
+        "overlap": 0.863,
+        "accepted": true
+      },
+      {
+        "chunk": 13,
+        "dy": 0.0,
+        "yaw_deg": -0.687,
+        "shift_m": 0.1475,
+        "overlap": 0.933,
+        "accepted": true
+      },
+      {
+        "chunk": 14,
+        "dy": 0.0,
+        "yaw_deg": -0.174,
+        "shift_m": 0.0078,
+        "overlap": 0.954,
+        "accepted": true
+      }
+    ]
+  },
+  "rooms": [
+    {
+      "id": "R1",
+      "shape": "rectangle",
+      "width_m": 2.141,
+      "depth_m": 2.471,
+      "dimensions": {
+        "x": {
+          "value_m": 2.141,
+          "interval_95_m": [
+            1.688,
+            2.594
+          ],
+          "method": "outline_extent"
+        },
+        "y": {
+          "value_m": 2.471,
+          "interval_95_m": [
+            2.018,
+            2.924
+          ],
+          "method": "outline_extent"
+        }
+      },
+      "floor_area_m2": 5.29,
+      "floor_area_interval_95_m2": [
+        3.78,
+        6.801
+      ],
+      "ceiling": {
+        "height_m": 2.965,
+        "interval_95_m": [
+          2.906,
+          3.023
+        ]
+      },
+      "walls": [
+        {
+          "id": "R1-W1",
+          "length_m": 2.471,
+          "interval_95_m": [
+            2.011,
+            2.931
+          ],
+          "face_measured": true,
+          "start": [
+            -0.646,
+            -3.639
+          ],
+          "end": [
+            -0.646,
+            -1.168
+          ]
+        },
+        {
+          "id": "R1-W2",
+          "length_m": 2.141,
+          "interval_95_m": [
+            1.682,
+            2.601
+          ],
+          "face_measured": true,
+          "start": [
+            -0.646,
+            -1.168
+          ],
+          "end": [
+            1.495,
+            -1.168
+          ]
+        },
+        {
+          "id": "R1-W3",
+          "length_m": 2.471,
+          "interval_95_m": [
+            2.011,
+            2.931
+          ],
+          "face_measured": false,
+          "start": [
+            1.495,
+            -1.168
+          ],
+          "end": [
+            1.495,
+            -3.639
+          ]
+        },
+        {
+          "id": "R1-W4",
+          "length_m": 2.141,
+          "interval_95_m": [
+            1.682,
+            2.601
+          ],
+          "face_measured": false,
+          "start": [
+            1.495,
+            -3.639
+          ],
+          "end": [
+            -0.646,
+            -3.639
+          ]
+        }
+      ],
+      "polygon": [
+        [
+          -0.646,
+          -3.639
+        ],
+        [
+          -0.646,
+          -1.168
+        ],
+        [
+          1.495,
+          -1.168
+        ],
+        [
+          1.495,
+          -3.639
+        ]
+      ]
+    },
+    {
+      "id": "R2",
+      "shape": "rectilinear_6_corners",
+      "width_m": 2.783,
+      "depth_m": 3.915,
+      "dimensions": {
+        "x": {
+          "value_m": 2.783,
+          "interval_95_m": [
+            2.329,
+            3.237
+          ],
+          "method": "outline_extent"
+        },
+        "y": {
+          "value_m": 3.915,
+          "interval_95_m": [
+            3.457,
+            4.372
+          ],
+          "method": "outline_extent"
+        }
+      },
+      "floor_area_m2": 9.5,
+      "floor_area_interval_95_m2": [
+        8.894,
+        10.107
+      ],
+      "ceiling": {
+        "height_m": 2.96,
+        "interval_95_m": [
+          2.901,
+          3.018
+        ]
+      },
+      "walls": [
+        {
+          "id": "R2-W1",
+          "length_m": 2.783,
+          "interval_95_m": [
+            2.66,
+            2.907
+          ],
+          "face_measured": true,
+          "start": [
+            2.258,
+            -1.095
+          ],
+          "end": [
+            -0.525,
+            -1.095
+          ]
+        },
+        {
+          "id": "R2-W2",
+          "length_m": 3.081,
+          "interval_95_m": [
+            2.955,
+            3.207
+          ],
+          "face_measured": true,
+          "start": [
+            -0.525,
+            -1.095
+          ],
+          "end": [
+            -0.525,
+            1.986
+          ]
+        },
+        {
+          "id": "R2-W3",
+          "length_m": 1.674,
+          "interval_95_m": [
+            1.558,
+            1.79
+          ],
+          "face_measured": true,
+          "start": [
+            -0.525,
+            1.986
+          ],
+          "end": [
+            1.149,
+            1.986
+          ]
+        },
+        {
+          "id": "R2-W4",
+          "length_m": 0.834,
+          "interval_95_m": [
+            0.722,
+            0.946
+          ],
+          "face_measured": true,
+          "start": [
+            1.149,
+            1.986
+          ],
+          "end": [
+            1.149,
+            2.82
+          ]
+        },
+        {
+          "id": "R2-W5",
+          "length_m": 1.109,
+          "interval_95_m": [
+            0.996,
+            1.222
+          ],
+          "face_measured": true,
+          "start": [
+            1.149,
+            2.82
+          ],
+          "end": [
+            2.258,
+            2.82
+          ]
+        },
+        {
+          "id": "R2-W6",
+          "length_m": 3.915,
+          "interval_95_m": [
+            3.78,
+            4.05
+          ],
+          "face_measured": true,
+          "start": [
+            2.258,
+            2.82
+          ],
+          "end": [
+            2.258,
+            -1.095
+          ]
+        }
+      ],
+      "polygon": [
+        [
+          2.258,
+          -1.095
+        ],
+        [
+          -0.525,
+          -1.095
+        ],
+        [
+          -0.525,
+          1.986
+        ],
+        [
+          1.149,
+          1.986
+        ],
+        [
+          1.149,
+          2.82
+        ],
+        [
+          2.258,
+          2.82
+        ]
+      ]
+    },
+    {
+      "id": "R3",
+      "shape": "rectilinear_10_corners",
+      "width_m": 3.441,
+      "depth_m": 3.548,
+      "dimensions": {
+        "x": {
+          "value_m": 3.441,
+          "interval_95_m": [
+            2.986,
+            3.897
+          ],
+          "method": "outline_extent"
+        },
+        "y": {
+          "value_m": 3.548,
+          "interval_95_m": [
+            3.092,
+            4.004
+          ],
+          "method": "outline_extent"
+        }
+      },
+      "floor_area_m2": 9.7,
+      "floor_area_interval_95_m2": [
+        8.951,
+        10.449
+      ],
+      "ceiling": {
+        "height_m": 3.077,
+        "interval_95_m": [
+          3.017,
+          3.138
+        ]
+      },
+      "walls": [
+        {
+          "id": "R3-W1",
+          "length_m": 2.779,
+          "interval_95_m": [
+            2.655,
+            2.902
+          ],
+          "face_measured": true,
+          "start": [
+            8.814,
+            0.027
+          ],
+          "end": [
+            6.035,
+            0.027
+          ]
+        },
+        {
+          "id": "R3-W2",
+          "length_m": 0.79,
+          "interval_95_m": [
+            0.678,
+            0.902
+          ],
+          "face_measured": true,
+          "start": [
+            6.035,
+            0.027
+          ],
+          "end": [
+            6.035,
+            0.817
+          ]
+        },
+        {
+          "id": "R3-W3",
+          "length_m": 0.361,
+          "interval_95_m": [
+            0.25,
+            0.472
+          ],
+          "face_measured": true,
+          "start": [
+            6.035,
+            0.817
+          ],
+          "end": [
+            5.674,
+            0.817
+          ]
+        },
+        {
+          "id": "R3-W4",
+          "length_m": 1.818,
+          "interval_95_m": [
+            1.359,
+            2.277
+          ],
+          "face_measured": true,
+          "start": [
+            5.674,
+            0.817
+          ],
+          "end": [
+            5.674,
+            2.635
+          ]
+        },
+        {
+          "id": "R3-W5",
+          "length_m": 0.301,
+          "interval_95_m": [
+            0.19,
+            0.413
+          ],
+          "face_measured": false,
+          "start": [
+            5.674,
+            2.635
+          ],
+          "end": [
+            5.372,
+            2.635
+          ]
+        },
+        {
+          "id": "R3-W6",
+          "length_m": 0.94,
+          "interval_95_m": [
+            0.302,
+            1.578
+          ],
+          "face_measured": true,
+          "start": [
+            5.372,
+            2.635
+          ],
+          "end": [
+            5.372,
+            3.575
+          ]
+        },
+        {
+          "id": "R3-W7",
+          "length_m": 1.062,
+          "interval_95_m": [
+            0.949,
+            1.175
+          ],
+          "face_measured": false,
+          "start": [
+            5.372,
+            3.575
+          ],
+          "end": [
+            6.434,
+            3.575
+          ]
+        },
+        {
+          "id": "R3-W8",
+          "length_m": 0.605,
+          "interval_95_m": [
+            0.147,
+            1.063
+          ],
+          "face_measured": true,
+          "start": [
+            6.434,
+            3.575
+          ],
+          "end": [
+            6.434,
+            2.97
+          ]
+        },
+        {
+          "id": "R3-W9",
+          "length_m": 2.379,
+          "interval_95_m": [
+            2.259,
+            2.499
+          ],
+          "face_measured": true,
+          "start": [
+            6.434,
+            2.97
+          ],
+          "end": [
+            8.814,
+            2.97
+          ]
+        },
+        {
+          "id": "R3-W10",
+          "length_m": 2.943,
+          "interval_95_m": [
+            2.818,
+            3.068
+          ],
+          "face_measured": true,
+          "start": [
+            8.814,
+            2.97
+          ],
+          "end": [
+            8.814,
+            0.027
+          ]
+        }
+      ],
+      "polygon": [
+        [
+          8.814,
+          0.027
+        ],
+        [
+          6.035,
+          0.027
+        ],
+        [
+          6.035,
+          0.817
+        ],
+        [
+          5.674,
+          0.817
+        ],
+        [
+          5.674,
+          2.635
+        ],
+        [
+          5.372,
+          2.635
+        ],
+        [
+          5.372,
+          3.575
+        ],
+        [
+          6.434,
+          3.575
+        ],
+        [
+          6.434,
+          2.97
+        ],
+        [
+          8.814,
+          2.97
+        ]
+      ]
+    },
+    {
+      "id": "R4",
+      "shape": "rectilinear_20_corners",
+      "width_m": 6.731,
+      "depth_m": 8.631,
+      "dimensions": {
+        "x": {
+          "value_m": 6.731,
+          "interval_95_m": [
+            6.261,
+            7.2
+          ],
+          "method": "outline_extent"
+        },
+        "y": {
+          "value_m": 8.631,
+          "interval_95_m": [
+            8.149,
+            9.112
+          ],
+          "method": "outline_extent"
+        }
+      },
+      "floor_area_m2": 29.36,
+      "floor_area_interval_95_m2": [
+        27.837,
+        30.885
+      ],
+      "ceiling": {
+        "height_m": 2.468,
+        "interval_95_m": [
+          2.419,
+          2.517
+        ]
+      },
+      "walls": [
+        {
+          "id": "R4-W1",
+          "length_m": 2.859,
+          "interval_95_m": [
+            2.735,
+            2.983
+          ],
+          "face_measured": true,
+          "start": [
+            5.285,
+            0.512
+          ],
+          "end": [
+            2.426,
+            0.512
+          ]
+        },
+        {
+          "id": "R4-W2",
+          "length_m": 3.254,
+          "interval_95_m": [
+            3.126,
+            3.382
+          ],
+          "face_measured": true,
+          "start": [
+            2.426,
+            0.512
+          ],
+          "end": [
+            2.426,
+            3.766
+          ]
+        },
+        {
+          "id": "R4-W3",
+          "length_m": 0.335,
+          "interval_95_m": [
+            0.224,
+            0.446
+          ],
+          "face_measured": true,
+          "start": [
+            2.426,
+            3.766
+          ],
+          "end": [
+            2.091,
+            3.766
+          ]
+        },
+        {
+          "id": "R4-W4",
+          "length_m": 0.561,
+          "interval_95_m": [
+            0.103,
+            1.018
+          ],
+          "face_measured": true,
+          "start": [
+            2.091,
+            3.766
+          ],
+          "end": [
+            2.091,
+            3.205
+          ]
+        },
+        {
+          "id": "R4-W5",
+          "length_m": 0.847,
+          "interval_95_m": [
+            0.735,
+            0.96
+          ],
+          "face_measured": false,
+          "start": [
+            2.091,
+            3.205
+          ],
+          "end": [
+            1.243,
+            3.205
+          ]
+        },
+        {
+          "id": "R4-W6",
+          "length_m": 2.036,
+          "interval_95_m": [
+            1.577,
+            2.495
+          ],
+          "face_measured": true,
+          "start": [
+            1.243,
+            3.205
+          ],
+          "end": [
+            1.243,
+            5.241
+          ]
+        },
+        {
+          "id": "R4-W7",
+          "length_m": 0.768,
+          "interval_95_m": [
+            0.311,
+            1.226
+          ],
+          "face_measured": true,
+          "start": [
+            1.243,
+            5.241
+          ],
+          "end": [
+            2.012,
+            5.241
+          ]
+        },
+        {
+          "id": "R4-W8",
+          "length_m": 0.034,
+          "interval_95_m": [
+            -0.077,
+            0.145
+          ],
+          "face_measured": false,
+          "start": [
+            2.012,
+            5.241
+          ],
+          "end": [
+            2.012,
+            5.275
+          ]
+        },
+        {
+          "id": "R4-W9",
+          "length_m": 2.835,
+          "interval_95_m": [
+            2.374,
+            3.296
+          ],
+          "face_measured": true,
+          "start": [
+            2.012,
+            5.275
+          ],
+          "end": [
+            -0.824,
+            5.275
+          ]
+        },
+        {
+          "id": "R4-W10",
+          "length_m": 3.356,
+          "interval_95_m": [
+            3.228,
+            3.485
+          ],
+          "face_measured": true,
+          "start": [
+            -0.824,
+            5.275
+          ],
+          "end": [
+            -0.824,
+            8.631
+          ]
+        },
+        {
+          "id": "R4-W11",
+          "length_m": 2.844,
+          "interval_95_m": [
+            2.72,
+            2.968
+          ],
+          "face_measured": true,
+          "start": [
+            -0.824,
+            8.631
+          ],
+          "end": [
+            2.02,
+            8.631
+          ]
+        },
+        {
+          "id": "R4-W12",
+          "length_m": 0.512,
+          "interval_95_m": [
+            0.4,
+            0.623
+          ],
+          "face_measured": true,
+          "start": [
+            2.02,
+            8.631
+          ],
+          "end": [
+            2.02,
+            9.143
+          ]
+        },
+        {
+          "id": "R4-W13",
+          "length_m": 1.113,
+          "interval_95_m": [
+            1.0,
+            1.226
+          ],
+          "face_measured": true,
+          "start": [
+            2.02,
+            9.143
+          ],
+          "end": [
+            3.134,
+            9.143
+          ]
+        },
+        {
+          "id": "R4-W14",
+          "length_m": 4.346,
+          "interval_95_m": [
+            4.206,
+            4.486
+          ],
+          "face_measured": true,
+          "start": [
+            3.134,
+            9.143
+          ],
+          "end": [
+            3.134,
+            4.797
+          ]
+        },
+        {
+          "id": "R4-W15",
+          "length_m": 2.245,
+          "interval_95_m": [
+            1.786,
+            2.705
+          ],
+          "face_measured": true,
+          "start": [
+            3.134,
+            4.797
+          ],
+          "end": [
+            5.379,
+            4.797
+          ]
+        },
+        {
+          "id": "R4-W16",
+          "length_m": 0.15,
+          "interval_95_m": [
+            0.039,
+            0.261
+          ],
+          "face_measured": false,
+          "start": [
+            5.379,
+            4.797
+          ],
+          "end": [
+            5.379,
+            4.647
+          ]
+        },
+        {
+          "id": "R4-W17",
+          "length_m": 0.528,
+          "interval_95_m": [
+            -0.109,
+            1.166
+          ],
+          "face_measured": true,
+          "start": [
+            5.379,
+            4.647
+          ],
+          "end": [
+            5.907,
+            4.647
+          ]
+        },
+        {
+          "id": "R4-W18",
+          "length_m": 1.082,
+          "interval_95_m": [
+            0.624,
+            1.54
+          ],
+          "face_measured": false,
+          "start": [
+            5.907,
+            4.647
+          ],
+          "end": [
+            5.907,
+            3.565
+          ]
+        },
+        {
+          "id": "R4-W19",
+          "length_m": 0.622,
+          "interval_95_m": [
+            0.165,
+            1.08
+          ],
+          "face_measured": false,
+          "start": [
+            5.907,
+            3.565
+          ],
+          "end": [
+            5.285,
+            3.565
+          ]
+        },
+        {
+          "id": "R4-W20",
+          "length_m": 3.053,
+          "interval_95_m": [
+            2.591,
+            3.514
+          ],
+          "face_measured": true,
+          "start": [
+            5.285,
+            3.565
+          ],
+          "end": [
+            5.285,
+            0.512
+          ]
+        }
+      ],
+      "polygon": [
+        [
+          5.285,
+          0.512
+        ],
+        [
+          2.426,
+          0.512
+        ],
+        [
+          2.426,
+          3.766
+        ],
+        [
+          2.091,
+          3.766
+        ],
+        [
+          2.091,
+          3.205
+        ],
+        [
+          1.243,
+          3.205
+        ],
+        [
+          1.243,
+          5.241
+        ],
+        [
+          2.012,
+          5.241
+        ],
+        [
+          2.012,
+          5.275
+        ],
+        [
+          -0.824,
+          5.275
+        ],
+        [
+          -0.824,
+          8.631
+        ],
+        [
+          2.02,
+          8.631
+        ],
+        [
+          2.02,
+          9.143
+        ],
+        [
+          3.134,
+          9.143
+        ],
+        [
+          3.134,
+          4.797
+        ],
+        [
+          5.379,
+          4.797
+        ],
+        [
+          5.379,
+          4.647
+        ],
+        [
+          5.907,
+          4.647
+        ],
+        [
+          5.907,
+          3.565
+        ],
+        [
+          5.285,
+          3.565
+        ]
+      ]
+    },
+    {
+      "id": "R5",
+      "shape": "rectilinear_10_corners",
+      "width_m": 2.237,
+      "depth_m": 2.234,
+      "dimensions": {
+        "x": {
+          "value_m": 2.237,
+          "interval_95_m": [
+            1.784,
+            2.69
+          ],
+          "method": "outline_extent"
+        },
+        "y": {
+          "value_m": 2.234,
+          "interval_95_m": [
+            1.781,
+            2.687
+          ],
+          "method": "outline_extent"
+        }
+      },
+      "floor_area_m2": 3.83,
+      "floor_area_interval_95_m2": [
+        3.252,
+        4.408
+      ],
+      "ceiling": {
+        "height_m": 2.279,
+        "interval_95_m": [
+          2.234,
+          2.324
+        ]
+      },
+      "walls": [
+        {
+          "id": "R5-W1",
+          "length_m": 0.748,
+          "interval_95_m": [
+            0.29,
+            1.205
+          ],
+          "face_measured": true,
+          "start": [
+            -0.72,
+            2.857
+          ],
+          "end": [
+            -0.72,
+            3.605
+          ]
+        },
+        {
+          "id": "R5-W2",
+          "length_m": 0.247,
+          "interval_95_m": [
+            -0.211,
+            0.704
+          ],
+          "face_measured": false,
+          "start": [
+            -0.72,
+            3.605
+          ],
+          "end": [
+            -0.473,
+            3.605
+          ]
+        },
+        {
+          "id": "R5-W3",
+          "length_m": 0.78,
+          "interval_95_m": [
+            0.142,
+            1.418
+          ],
+          "face_measured": false,
+          "start": [
+            -0.473,
+            3.605
+          ],
+          "end": [
+            -0.473,
+            4.385
+          ]
+        },
+        {
+          "id": "R5-W4",
+          "length_m": 0.187,
+          "interval_95_m": [
+            -0.271,
+            0.645
+          ],
+          "face_measured": false,
+          "start": [
+            -0.473,
+            4.385
+          ],
+          "end": [
+            -0.286,
+            4.385
+          ]
+        },
+        {
+          "id": "R5-W5",
+          "length_m": 0.706,
+          "interval_95_m": [
+            0.249,
+            1.164
+          ],
+          "face_measured": true,
+          "start": [
+            -0.286,
+            4.385
+          ],
+          "end": [
+            -0.286,
+            5.091
+          ]
+        },
+        {
+          "id": "R5-W6",
+          "length_m": 1.362,
+          "interval_95_m": [
+            1.248,
+            1.476
+          ],
+          "face_measured": true,
+          "start": [
+            -0.286,
+            5.091
+          ],
+          "end": [
+            1.076,
+            5.091
+          ]
+        },
+        {
+          "id": "R5-W7",
+          "length_m": 1.517,
+          "interval_95_m": [
+            1.402,
+            1.632
+          ],
+          "face_measured": true,
+          "start": [
+            1.076,
+            5.091
+          ],
+          "end": [
+            1.076,
+            3.575
+          ]
+        },
+        {
+          "id": "R5-W8",
+          "length_m": 0.44,
+          "interval_95_m": [
+            -0.017,
+            0.898
+          ],
+          "face_measured": true,
+          "start": [
+            1.076,
+            3.575
+          ],
+          "end": [
+            1.517,
+            3.575
+          ]
+        },
+        {
+          "id": "R5-W9",
+          "length_m": 0.717,
+          "interval_95_m": [
+            0.606,
+            0.829
+          ],
+          "face_measured": false,
+          "start": [
+            1.517,
+            3.575
+          ],
+          "end": [
+            1.517,
+            2.857
+          ]
+        },
+        {
+          "id": "R5-W10",
+          "length_m": 2.237,
+          "interval_95_m": [
+            1.777,
+            2.697
+          ],
+          "face_measured": true,
+          "start": [
+            1.517,
+            2.857
+          ],
+          "end": [
+            -0.72,
+            2.857
+          ]
+        }
+      ],
+      "polygon": [
+        [
+          -0.72,
+          2.857
+        ],
+        [
+          -0.72,
+          3.605
+        ],
+        [
+          -0.473,
+          3.605
+        ],
+        [
+          -0.473,
+          4.385
+        ],
+        [
+          -0.286,
+          4.385
+        ],
+        [
+          -0.286,
+          5.091
+        ],
+        [
+          1.076,
+          5.091
+        ],
+        [
+          1.076,
+          3.575
+        ],
+        [
+          1.517,
+          3.575
+        ],
+        [
+          1.517,
+          2.857
+        ]
+      ]
+    },
+    {
+      "id": "R6",
+      "shape": "rectilinear_12_corners",
+      "width_m": 2.87,
+      "depth_m": 3.08,
+      "dimensions": {
+        "x": {
+          "value_m": 2.87,
+          "interval_95_m": [
+            2.415,
+            3.324
+          ],
+          "method": "outline_extent"
+        },
+        "y": {
+          "value_m": 3.08,
+          "interval_95_m": [
+            2.626,
+            3.535
+          ],
+          "method": "outline_extent"
+        }
+      },
+      "floor_area_m2": 7.55,
+      "floor_area_interval_95_m2": [
+        6.886,
+        8.22
+      ],
+      "ceiling": {
+        "height_m": 2.368,
+        "interval_95_m": [
+          2.321,
+          2.415
+        ]
+      },
+      "walls": [
+        {
+          "id": "R6-W1",
+          "length_m": 0.896,
+          "interval_95_m": [
+            0.438,
+            1.354
+          ],
+          "face_measured": true,
+          "start": [
+            6.439,
+            2.977
+          ],
+          "end": [
+            6.439,
+            3.873
+          ]
+        },
+        {
+          "id": "R6-W2",
+          "length_m": 0.482,
+          "interval_95_m": [
+            0.024,
+            0.94
+          ],
+          "face_measured": false,
+          "start": [
+            6.439,
+            3.873
+          ],
+          "end": [
+            5.957,
+            3.873
+          ]
+        },
+        {
+          "id": "R6-W3",
+          "length_m": 0.815,
+          "interval_95_m": [
+            0.357,
+            1.273
+          ],
+          "face_measured": false,
+          "start": [
+            5.957,
+            3.873
+          ],
+          "end": [
+            5.957,
+            4.688
+          ]
+        },
+        {
+          "id": "R6-W4",
+          "length_m": 0.427,
+          "interval_95_m": [
+            -0.031,
+            0.885
+          ],
+          "face_measured": true,
+          "start": [
+            5.957,
+            4.688
+          ],
+          "end": [
+            6.384,
+            4.688
+          ]
+        },
+        {
+          "id": "R6-W5",
+          "length_m": 1.117,
+          "interval_95_m": [
+            0.659,
+            1.575
+          ],
+          "face_measured": true,
+          "start": [
+            6.384,
+            4.688
+          ],
+          "end": [
+            6.384,
+            5.805
+          ]
+        },
+        {
+          "id": "R6-W6",
+          "length_m": 0.443,
+          "interval_95_m": [
+            -0.015,
+            0.901
+          ],
+          "face_measured": false,
+          "start": [
+            6.384,
+            5.805
+          ],
+          "end": [
+            6.827,
+            5.805
+          ]
+        },
+        {
+          "id": "R6-W7",
+          "length_m": 0.252,
+          "interval_95_m": [
+            -0.205,
+            0.71
+          ],
+          "face_measured": false,
+          "start": [
+            6.827,
+            5.805
+          ],
+          "end": [
+            6.827,
+            6.057
+          ]
+        },
+        {
+          "id": "R6-W8",
+          "length_m": 0.42,
+          "interval_95_m": [
+            -0.218,
+            1.058
+          ],
+          "face_measured": true,
+          "start": [
+            6.827,
+            6.057
+          ],
+          "end": [
+            7.247,
+            6.057
+          ]
+        },
+        {
+          "id": "R6-W9",
+          "length_m": 0.1,
+          "interval_95_m": [
+            -0.01,
+            0.211
+          ],
+          "face_measured": false,
+          "start": [
+            7.247,
+            6.057
+          ],
+          "end": [
+            7.247,
+            5.957
+          ]
+        },
+        {
+          "id": "R6-W10",
+          "length_m": 1.58,
+          "interval_95_m": [
+            1.121,
+            2.038
+          ],
+          "face_measured": true,
+          "start": [
+            7.247,
+            5.957
+          ],
+          "end": [
+            8.827,
+            5.957
+          ]
+        },
+        {
+          "id": "R6-W11",
+          "length_m": 2.98,
+          "interval_95_m": [
+            2.855,
+            3.105
+          ],
+          "face_measured": true,
+          "start": [
+            8.827,
+            5.957
+          ],
+          "end": [
+            8.827,
+            2.977
+          ]
+        },
+        {
+          "id": "R6-W12",
+          "length_m": 2.388,
+          "interval_95_m": [
+            2.267,
+            2.508
+          ],
+          "face_measured": true,
+          "start": [
+            8.827,
+            2.977
+          ],
+          "end": [
+            6.439,
+            2.977
+          ]
+        }
+      ],
+      "polygon": [
+        [
+          6.439,
+          2.977
+        ],
+        [
+          6.439,
+          3.873
+        ],
+        [
+          5.957,
+          3.873
+        ],
+        [
+          5.957,
+          4.688
+        ],
+        [
+          6.384,
+          4.688
+        ],
+        [
+          6.384,
+          5.805
+        ],
+        [
+          6.827,
+          5.805
+        ],
+        [
+          6.827,
+          6.057
+        ],
+        [
+          7.247,
+          6.057
+        ],
+        [
+          7.247,
+          5.957
+        ],
+        [
+          8.827,
+          5.957
+        ],
+        [
+          8.827,
+          2.977
+        ]
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "type": "doorway_or_opening",
+      "between": [
+        "R2",
+        "R5"
+      ],
+      "width_m": 0.56,
+      "interval_95_m": [
+        0.266,
+        0.854
+      ]
+    },
+    {
+      "type": "doorway_or_opening",
+      "between": [
+        "R3",
+        "R6"
+      ],
+      "width_m": 1.68,
+      "interval_95_m": [
+        1.386,
+        1.974
+      ]
+    },
+    {
+      "type": "doorway_or_opening",
+      "between": [
+        "R4",
+        "R5"
+      ],
+      "width_m": 0.5,
+      "interval_95_m": [
+        0.206,
+        0.794
+      ]
+    },
+    {
+      "type": "doorway_or_opening",
+      "between": [
+        "R3",
+        "R4"
+      ],
+      "width_m": 0.56,
+      "interval_95_m": [
+        0.266,
+        0.854
+      ]
+    },
+    {
+      "type": "doorway_or_opening",
+      "between": [
+        "R4",
+        "R6"
+      ],
+      "width_m": 1.0,
+      "interval_95_m": [
+        0.706,
+        1.294
+      ]
+    },
+    {
+      "type": "doorway_or_opening",
+      "between": [
+        "R1",
+        "R2"
+      ],
+      "width_m": 1.32,
+      "interval_95_m": [
+        1.026,
+        1.614
+      ]
+    }
+  ],
+  "adjacency": [
+    [
+      "R1",
+      "R2"
+    ],
+    [
+      "R2",
+      "R5"
+    ],
+    [
+      "R3",
+      "R4"
+    ],
+    [
+      "R3",
+      "R6"
+    ],
+    [
+      "R4",
+      "R5"
+    ],
+    [
+      "R4",
+      "R6"
+    ]
+  ],
+  "footprint_m2": 65.23,
+  "damage_regions": [],
+  "concealed_damage_flags": [],
+  "scope_line_items": [],
+  "not_implemented": [
+    "damage detection",
+    "concealed-damage rules",
+    "scope line items",
+    "window detection",
+    "non-rectangular room outlines"
+  ],
+  "intervals_note": "95% intervals. Wall-face (4 cm) and outline (23 cm) sigmas were fitted on one repeat pair of the same flat, in-sample; ceiling (4 mm + 1%), scale (1%) and opening (15 cm) are priors. None is calibrated against tape ground truth.",
+  "runtime_s": 18.7
+}

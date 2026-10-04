@@ -1,0 +1,38 @@
+{
+ "capture": "single_scan_floor_only.zip",
+ "footprint_m2": 58.81,
+ "adjacency": [
+  [
+   "R1",
+   "R2"
+  ],
+  [
+   "R1",
+   "R3"
+  ],
+  [
+   "R2",
+   "R3"
+  ],
+  [
+   "R3",
+   "R4"
+  ],
+  [
+   "R3",
+   "R5"
+  ],
+  [
+   "R5",
+   "R6"
+  ]
+ ],
+ "runtime_s": 11.9
+}
+  R1: 2.95 x 2.43 m, 6.3 m2, ceiling None
+  R2: 3.62 x 2.95 m, 7.4 m2, ceiling None
+  R3: 4.89 x 4.74 m, 15.0 m2, ceiling None
+  R4: 3.79 x 3.91 m, 12.6 m2, ceiling None
+  R5: 4.37 x 3.02 m, 10.6 m2, ceiling None
+  R6: 1.96 x 1.80 m, 3.5 m2, ceiling None
+  R7: 2.20 x 2.21 m, 3.4 m2, ceiling None

@@ -1,0 +1,33 @@
+{
+ "capture": "single_scan_with_ceiling.zip",
+ "footprint_m2": 64.06,
+ "adjacency": [
+  [
+   "R1",
+   "R2"
+  ],
+  [
+   "R2",
+   "R6"
+  ],
+  [
+   "R3",
+   "R5"
+  ],
+  [
+   "R4",
+   "R5"
+  ],
+  [
+   "R4",
+   "R6"
+  ]
+ ],
+ "runtime_s": 20.4
+}
+  R1: 2.15 x 2.44 m, 5.3 m2, ceiling 2.964
+  R2: 2.80 x 3.88 m, 9.5 m2, ceiling 3.064
+  R3: 3.42 x 3.57 m, 9.7 m2, ceiling 3.078
+  R4: 3.49 x 4.28 m, 12.9 m2, ceiling 3.088
+  R5: 2.90 x 2.92 m, 7.1 m2, ceiling 2.381
+  R6: 3.77 x 6.34 m, 19.7 m2, ceiling 2.447

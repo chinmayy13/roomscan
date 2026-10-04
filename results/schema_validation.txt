@@ -1,0 +1,3 @@
+OK   out/single_room/plan.json
+OK   out/single_scan_floor_only/plan.json
+OK   out/single_scan_with_ceiling/plan.json

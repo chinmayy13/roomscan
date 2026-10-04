@@ -1,0 +1,5 @@
+rooms found: 2  openings: [(['R1', 'R2'], 0.88)]
+room A: dims 4.000 x 3.000 (truth 4.0 x 3.0), errors 0.0/0.0 cm, ceiling 2.6
+room B: dims 3.000 x 3.000 (truth 3.0 x 3.0), errors 0.0/0.0 cm, ceiling 2.6
+plan.json validates against plan.schema.json
+PASS

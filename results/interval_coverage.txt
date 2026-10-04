@@ -1,0 +1,13 @@
+matched face pairs: 31  (of 46 measured faces in A)
+sigma that covers 95% of these pairs: 4.0 cm
+
+sigma per face   half-width of 95% gap interval   coverage of matched pairs
+   0.5 cm          +-  1.4 cm                          10%
+   1.0 cm          +-  2.8 cm                          29%
+   2.0 cm          +-  5.5 cm                          77%
+   3.0 cm          +-  8.3 cm                          84%
+   3.5 cm          +-  9.7 cm                          84%
+   4.0 cm          +- 11.1 cm                          94%
+   5.0 cm          +- 13.9 cm                          97%
+
+shipped plan.FACE_SIGMA = 4.0 cm -> +-11.1 cm, covers 94% of matched face pairs (in-sample)

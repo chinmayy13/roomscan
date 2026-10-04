@@ -1,0 +1,18 @@
+{
+ "capture": "single_room.zip",
+ "footprint_m2": 20.82,
+ "adjacency": [
+  [
+   "R1",
+   "R3"
+  ],
+  [
+   "R2",
+   "R3"
+  ]
+ ],
+ "runtime_s": 3.8
+}
+  R1: 3.44 x 2.98 m, 7.6 m2, ceiling None
+  R2: 2.55 x 1.66 m, 7.2 m2, ceiling None
+  R3: 4.14 x 1.56 m, 6.1 m2, ceiling None
