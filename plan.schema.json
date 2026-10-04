@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "roomscan plan.json (schema_version 0.1)",
+  "type": "object",
+  "required": ["schema_version", "capture", "tier", "units", "rooms", "openings", "adjacency",
+               "footprint_m2", "drift_correction", "damage_regions", "concealed_damage_flags",
+               "scope_line_items", "not_implemented", "intervals_note"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "tier": {"enum": ["lidar", "video", "photo"]},
+    "units": {"const": "metres"},
+    "footprint_m2": {"type": "number"},
+    "rooms": {"type": "array", "items": {"$ref": "#/$defs/room"}},
+    "openings": {"type": "array", "items": {"$ref": "#/$defs/opening"}},
+    "adjacency": {"type": "array", "items": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2}},
+    "drift_correction": {"type": "object", "required": ["enabled"]},
+    "damage_regions": {"type": "array"},
+    "concealed_damage_flags": {"type": "array"},
+    "scope_line_items": {"type": "array"},
+    "not_implemented": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "interval": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+    "room": {
+      "type": "object",
+      "required": ["id", "shape", "width_m", "depth_m", "dimensions", "floor_area_m2",
+                   "floor_area_interval_95_m2", "ceiling", "walls", "polygon"],
+      "properties": {
+        "id": {"type": "string"},
+        "floor_area_m2": {"type": "number"},
+        "floor_area_interval_95_m2": {"$ref": "#/$defs/interval"},
+        "ceiling": {"type": "object", "properties": {
+            "height_m": {"type": ["number", "null"]},
+            "interval_95_m": {"$ref": "#/$defs/interval"},
+            "reason": {"type": "string"}}, "required": ["height_m"]},
+        "walls": {"type": "array", "items": {"type": "object",
+            "required": ["id", "length_m", "interval_95_m", "face_measured", "start", "end"],
+            "properties": {"interval_95_m": {"$ref": "#/$defs/interval"}, "face_measured": {"type": "boolean"}}}},
+        "polygon": {"type": "array", "items": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}}
+      }
+    },
+    "opening": {
+      "type": "object",
+      "required": ["type", "between", "width_m", "interval_95_m"],
+      "properties": {"between": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2},
+                     "interval_95_m": {"$ref": "#/$defs/interval"}}
+    }
+  }
+}
